@@ -80,17 +80,9 @@ export default function RightPanel() {
                   <span className="text-muted-foreground mx-1.5">·</span>
                   <span className="text-foreground/80">Catalyze Systems</span>
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Programmed 15+ frontend screens for the MyOPD All-in-One mobile app
-                  using Flutter and Dart. Integrated 10+ RESTful APIs for processing
-                  patient records, prescriptions, and visit information. Designed 15+
-                  interrelated Realm database schemas for robust offline-first functionality.
-                </p>
-                <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1">
-                  <li>
-                    Spearheaded the &quot;Add New Patient Visit&quot; feature, resulting in
-                    an estimated 50–70% increase in active user engagement.
-                  </li>
+                <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1.5">
+                  <li>Built 15+ Flutter screens and integrated 10+ RESTful APIs for the MyOPD mobile app, covering patient records, prescriptions, and visit workflows.</li>
+                  <li>Designed 15+ Realm database schemas for offline-first storage; new &quot;Add New Patient Visit&quot; feature drove an estimated 50–70% increase in active user engagement.</li>
                 </ul>
                 <ul className="mt-4 flex flex-wrap gap-2" aria-label="Technologies used">
                   {['Flutter', 'Dart', 'Realm DB', 'REST APIs'].map(techBadge)}
@@ -110,16 +102,9 @@ export default function RightPanel() {
                   <span className="text-muted-foreground mx-1.5">·</span>
                   <span className="text-foreground/80">IIITV, India</span>
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Developed heuristic algorithms for EV delivery route optimization under
-                  stringent time constraints. Created a mathematical model utilizing graph
-                  theory for complex routing with time windows.
-                </p>
-                <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1">
-                  <li>
-                    Reduced waiting times by 15–25% across test scenarios with comparative
-                    heuristic analysis.
-                  </li>
+                <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1.5">
+                  <li>Developed heuristic algorithms for EV delivery route optimization using a graph-theory mathematical model with time-window constraints.</li>
+                  <li>Comparative analysis across distance, time-window opening, and closing heuristics reduced waiting times by 15–25% in test scenarios.</li>
                 </ul>
                 <ul className="mt-4 flex flex-wrap gap-2" aria-label="Technologies used">
                   {['Python', 'Graph Theory', 'Algorithm Design', 'Data Analytics'].map(techBadge)}
@@ -166,16 +151,9 @@ export default function RightPanel() {
                     <ArrowUpRight className="h-4 w-4" />
                   </a>
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Breast Cancer Survival Prediction Tool engineered to predict survival
-                  periods from medical, genetic, and lifestyle datasets encompassing over
-                  1,000 patient records.
-                </p>
-                <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1">
-                  <li>
-                    Achieved 79% accuracy on clinical data and 67% on biological datasets
-                    using Random Forest, KNN, and Naive Bayes classifiers.
-                  </li>
+                <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1.5">
+                  <li>Built a survival prediction tool integrating medical, genetic, and lifestyle datasets across 1,000+ patient records using Random Forest, KNN, and Naive Bayes classifiers.</li>
+                  <li>Achieved 79% accuracy on clinical data and 67% on biological datasets through cross-validation and hyperparameter tuning.</li>
                 </ul>
                 <ul className="mt-4 flex flex-wrap gap-2" aria-label="Technologies used">
                   {['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Random Forest', 'KNN'].map(techBadge)}
@@ -213,23 +191,9 @@ export default function RightPanel() {
                   </a>
                 </h3>
                 <p className="mt-1 text-xs text-muted-foreground font-mono uppercase tracking-wide">Academic Research Project</p>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Investigated Estimation Shift accumulation in Batch Normalization layers,
-                  reproducing CVPR 2022 findings on error propagation in deep neural networks.
-                  Designed and executed ablation studies on the XBNBlock architecture,
-                  evaluating Layer Normalization as a parameter-free alternative to Group
-                  Normalization and exploring Late-Stage Placement for improved computational
-                  efficiency through a modular PyTorch training pipeline.
-                </p>
-                <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1">
-                  <li>
-                    Achieved a <span className="text-foreground font-medium">4.69% accuracy improvement</span> over
-                    baseline models on a stratified ImageNette subset.
-                  </li>
-                  <li>
-                    Layer Norm (+0.23% vs. GN) and Late-Stage Placement (+1.1% vs. Uniform)
-                    identified as effective lightweight strategies for stabilizing BN behavior.
-                  </li>
+                <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1.5">
+                  <li>Reproduced CVPR 2022 findings on Estimation Shift in Batch Normalization; designed ablation studies on the XBNBlock architecture evaluating Layer Norm and Late-Stage Placement via a modular PyTorch pipeline.</li>
+                  <li>Achieved a 4.69% accuracy improvement over baseline on ImageNette; Layer Norm (+0.23% vs. GN) and Late-Stage Placement (+1.1% vs. Uniform) confirmed as effective lightweight BN stabilization strategies.</li>
                 </ul>
                 <ul className="mt-4 flex flex-wrap gap-2" aria-label="Technologies used">
                   {['Python', 'PyTorch', 'Google Colab', 'Deep Learning', 'ResNets'].map(techBadge)}
@@ -266,16 +230,9 @@ export default function RightPanel() {
                     <ArrowUpRight className="h-4 w-4" />
                   </a>
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Engineered a comprehensive 2FA system utilizing Google Authenticator and
-                  advanced PAM features including rate limiting, idle session detection,
-                  password strength validation, and time-based access control.
-                </p>
-                <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1">
-                  <li>
-                    Implemented RBAC mechanisms and session management scripts, yielding a
-                    ~25–40% reduction in inactive session misuse.
-                  </li>
+                <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1.5">
+                  <li>Engineered a 2FA system with Google Authenticator and advanced PAM features — rate limiting, idle session detection, password strength enforcement, and time-based access control.</li>
+                  <li>Implemented RBAC mechanisms and automated session management scripts, reducing inactive session misuse by ~25–40%.</li>
                 </ul>
                 <ul className="mt-4 flex flex-wrap gap-2" aria-label="Technologies used">
                   {['Linux', 'PAM', 'Bash', 'Google Authenticator'].map(techBadge)}

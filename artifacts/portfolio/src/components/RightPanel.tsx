@@ -183,6 +183,60 @@ export default function RightPanel() {
               </div>
             </div>
 
+            {/* Batch Normalization Research */}
+            <div className="group relative grid sm:grid-cols-8 sm:gap-8 gap-2 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+              <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition lg:-inset-x-6 lg:block lg:group-hover:bg-muted/30 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]" />
+              <header className="z-10 sm:col-span-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground font-mono pt-1">
+                November 2025
+              </header>
+              <div className="z-10 sm:col-span-6">
+                <h3 className="font-medium text-foreground text-base flex items-center gap-2">
+                  Optimization of Batch Normalization in Deep Residual Networks
+                  {/* TODO: Replace with your actual GitHub repo URL */}
+                  <a
+                    href="https://github.com/omwaikar/batch-norm-optimization"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="GitHub repo"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <SiGithub className="h-4 w-4" />
+                  </a>
+                  <a
+                    href="https://github.com/omwaikar/batch-norm-optimization"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="View project"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <ArrowUpRight className="h-4 w-4" />
+                  </a>
+                </h3>
+                <p className="mt-1 text-xs text-muted-foreground font-mono uppercase tracking-wide">Academic Research Project</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Investigated Estimation Shift accumulation in Batch Normalization layers,
+                  reproducing CVPR 2022 findings on error propagation in deep neural networks.
+                  Designed and executed ablation studies on the XBNBlock architecture,
+                  evaluating Layer Normalization as a parameter-free alternative to Group
+                  Normalization and exploring Late-Stage Placement for improved computational
+                  efficiency through a modular PyTorch training pipeline.
+                </p>
+                <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1">
+                  <li>
+                    Achieved a <span className="text-foreground font-medium">4.69% accuracy improvement</span> over
+                    baseline models on a stratified ImageNette subset.
+                  </li>
+                  <li>
+                    Layer Norm (+0.23% vs. GN) and Late-Stage Placement (+1.1% vs. Uniform)
+                    identified as effective lightweight strategies for stabilizing BN behavior.
+                  </li>
+                </ul>
+                <ul className="mt-4 flex flex-wrap gap-2" aria-label="Technologies used">
+                  {['Python', 'PyTorch', 'Google Colab', 'Deep Learning', 'ResNets'].map(techBadge)}
+                </ul>
+              </div>
+            </div>
+
             {/* Linux Auth */}
             <div className="group relative grid sm:grid-cols-8 sm:gap-8 gap-2 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
               <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition lg:-inset-x-6 lg:block lg:group-hover:bg-muted/30 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]" />

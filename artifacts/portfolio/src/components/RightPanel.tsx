@@ -1,4 +1,6 @@
 import React from 'react';
+import { ArrowUpRight } from 'lucide-react';
+import { SiGithub } from 'react-icons/si';
 import { motion } from 'framer-motion';
 
 const fadeUp = {
@@ -105,8 +107,27 @@ export default function RightPanel() {
           <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 mb-12">
             <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-muted/30 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
             <div className="z-10 sm:col-span-8">
-              <h3 className="font-medium leading-snug text-foreground text-base">
+              <h3 className="font-medium leading-snug text-foreground text-base flex items-center gap-3">
                 Cancer Chrono Predictor
+                {/* TODO: Replace with your actual GitHub repo URL */}
+                <a
+                  href="https://github.com/omwaikar/cancer-chrono-predictor"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub repo for Cancer Chrono Predictor"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <SiGithub className="h-4 w-4" />
+                </a>
+                <a
+                  href="https://github.com/omwaikar/cancer-chrono-predictor"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="View Cancer Chrono Predictor"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
               </h3>
               <p className="mt-2 text-sm leading-normal text-muted-foreground">
                 Breast Cancer Survival Prediction Tool engineered to predict survival periods from medical, genetic, and lifestyle datasets encompassing over 1,000 patient records.
@@ -129,8 +150,27 @@ export default function RightPanel() {
           <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
             <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-muted/30 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
             <div className="z-10 sm:col-span-8">
-              <h3 className="font-medium leading-snug text-foreground text-base">
+              <h3 className="font-medium leading-snug text-foreground text-base flex items-center gap-3">
                 Multi-Layered Security for Linux Auth
+                {/* TODO: Replace with your actual GitHub repo URL */}
+                <a
+                  href="https://github.com/omwaikar/linux-auth-security"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub repo for Linux Auth Security"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <SiGithub className="h-4 w-4" />
+                </a>
+                <a
+                  href="https://github.com/omwaikar/linux-auth-security"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="View Linux Auth Security project"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
               </h3>
               <p className="mt-2 text-sm leading-normal text-muted-foreground">
                 Engineered a comprehensive 2FA system utilizing Google Authenticator and advanced PAM features including rate limiting, idle session detection, password strength validation, and time-based access control.

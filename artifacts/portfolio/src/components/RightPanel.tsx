@@ -64,7 +64,7 @@ export default function RightPanel() {
             <a
               href="/resume-swe.pdf"
               download="Om_Waikar_SWE_Resume.pdf"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-primary/40 text-sm font-medium text-primary bg-primary/5 hover:bg-primary/15 hover:border-primary transition-all"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-border text-sm font-medium text-muted-foreground bg-card hover:border-primary/40 hover:text-primary hover:bg-primary/5 transition-all"
             >
               <Download className="h-3.5 w-3.5" />
               SWE Resume

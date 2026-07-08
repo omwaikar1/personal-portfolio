@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowUpRight, Download } from "lucide-react";
+import { ArrowUpRight, Download, Code2, Sparkles } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -175,9 +175,12 @@ export default function RightPanel() {
           <SectionHeading>Projects</SectionHeading>
 
           {/* ── SWE ── */}
-          <p className="mb-6 text-xs font-semibold uppercase tracking-widest text-muted-foreground font-mono">
-            Software Engineering
-          </p>
+          <div className="flex items-center gap-4 border-b border-white/5 pb-4 mb-8">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary font-mono text-xs tracking-widest uppercase">
+              <Code2 size={14} />
+              <span>Software Engineering</span>
+            </div>
+          </div>
           <div className="group/list space-y-10 mb-12">
             {/* Linux Auth */}
             <div className="group relative grid sm:grid-cols-8 sm:gap-8 gap-2 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
@@ -235,9 +238,12 @@ export default function RightPanel() {
           </div>
 
           {/* ── AI / ML ── */}
-          <p className="mb-6 text-xs font-semibold uppercase tracking-widest text-muted-foreground font-mono">
-            AI / ML
-          </p>
+          <div className="flex items-center gap-4 border-b border-white/5 pb-4 mb-8">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#a78bfa]/10 border border-[#a78bfa]/30 text-[#a78bfa] font-mono text-xs tracking-widest uppercase">
+              <Sparkles size={14} />
+              <span>AI / ML</span>
+            </div>
+          </div>
           <div className="group/list space-y-10">
             {/* Batch Normalization Research */}
             <div className="group relative grid sm:grid-cols-8 sm:gap-8 gap-2 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">

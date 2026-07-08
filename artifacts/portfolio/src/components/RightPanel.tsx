@@ -173,6 +173,71 @@ export default function RightPanel() {
           variants={fadeUp}
         >
           <SectionHeading>Projects</SectionHeading>
+
+          {/* ── SWE ── */}
+          <p className="mb-6 text-xs font-semibold uppercase tracking-widest text-muted-foreground font-mono">
+            Software Engineering
+          </p>
+          <div className="group/list space-y-10 mb-12">
+            {/* Linux Auth */}
+            <div className="group relative grid sm:grid-cols-8 sm:gap-8 gap-2 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+              <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition lg:-inset-x-6 lg:block lg:group-hover:bg-muted/30 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]" />
+              <header className="z-10 sm:col-span-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground font-mono pt-1">
+                Nov — Dec 2024
+              </header>
+              <div className="z-10 sm:col-span-6">
+                <h3 className="font-medium text-foreground text-base flex items-center gap-2">
+                  Multi-Layered Security for Linux Auth
+                  {/* TODO: Replace with your actual GitHub repo URL */}
+                  <a
+                    href="https://github.com/omwaikar/linux-auth-security"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="GitHub repo"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <SiGithub className="h-4 w-4" />
+                  </a>
+                  <a
+                    href="https://github.com/omwaikar/linux-auth-security"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="View project"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <ArrowUpRight className="h-4 w-4" />
+                  </a>
+                </h3>
+                <p className="mt-1 text-xs text-muted-foreground font-mono uppercase tracking-wide">
+                  Personal Project
+                </p>
+                <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1.5">
+                  <li>
+                    Engineered a 2FA system with Google Authenticator and
+                    advanced PAM features — rate limiting, idle session
+                    detection, password strength enforcement, and time-based
+                    access control.
+                  </li>
+                  <li>
+                    Implemented RBAC mechanisms and automated session management
+                    scripts, reducing inactive session misuse by an estimated
+                    25–40%.
+                  </li>
+                </ul>
+                <ul
+                  className="mt-4 flex flex-wrap gap-2"
+                  aria-label="Technologies used"
+                >
+                  {["Linux", "PAM", "Bash", "Google Authenticator"].map(techBadge)}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* ── AI / ML ── */}
+          <p className="mb-6 text-xs font-semibold uppercase tracking-widest text-muted-foreground font-mono">
+            AI / ML
+          </p>
           <div className="group/list space-y-10">
             {/* Batch Normalization Research */}
             <div className="group relative grid sm:grid-cols-8 sm:gap-8 gap-2 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
@@ -231,62 +296,6 @@ export default function RightPanel() {
                     "Deep Learning",
                     "ResNets",
                   ].map(techBadge)}
-                </ul>
-              </div>
-            </div>
-
-            {/* Linux Auth */}
-            <div className="group relative grid sm:grid-cols-8 sm:gap-8 gap-2 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-              <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition lg:-inset-x-6 lg:block lg:group-hover:bg-muted/30 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]" />
-              <header className="z-10 sm:col-span-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground font-mono pt-1">
-                Nov — Dec 2024
-              </header>
-              <div className="z-10 sm:col-span-6">
-                <h3 className="font-medium text-foreground text-base flex items-center gap-2">
-                  Multi-Layered Security for Linux Auth
-                  {/* TODO: Replace with your actual GitHub repo URL */}
-                  <a
-                    href="https://github.com/omwaikar/linux-auth-security"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="GitHub repo"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    <SiGithub className="h-4 w-4" />
-                  </a>
-                  <a
-                    href="https://github.com/omwaikar/linux-auth-security"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="View project"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    <ArrowUpRight className="h-4 w-4" />
-                  </a>
-                </h3>
-                <p className="mt-1 text-xs text-muted-foreground font-mono uppercase tracking-wide">
-                  Personal Project
-                </p>
-                <ul className="mt-2 text-sm text-muted-foreground list-disc pl-4 space-y-1.5">
-                  <li>
-                    Engineered a 2FA system with Google Authenticator and
-                    advanced PAM features — rate limiting, idle session
-                    detection, password strength enforcement, and time-based
-                    access control.
-                  </li>
-                  <li>
-                    Implemented RBAC mechanisms and automated session management
-                    scripts, reducing inactive session misuse by an estimated
-                    25–40%.
-                  </li>
-                </ul>
-                <ul
-                  className="mt-4 flex flex-wrap gap-2"
-                  aria-label="Technologies used"
-                >
-                  {["Linux", "PAM", "Bash", "Google Authenticator"].map(
-                    techBadge,
-                  )}
                 </ul>
               </div>
             </div>

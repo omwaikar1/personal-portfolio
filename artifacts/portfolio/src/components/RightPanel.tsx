@@ -31,7 +31,6 @@ export default function RightPanel() {
       {/* ── Hero ──────────────────────────────────────────── */}
       <section id="about" className="scroll-mt-20 mb-20">
         <motion.div initial="hidden" animate="visible" variants={fadeUp}>
-
           {/* Open to work badge */}
           <div className="flex items-center gap-2 mb-5">
             <span className="relative flex h-2.5 w-2.5">
@@ -52,7 +51,7 @@ export default function RightPanel() {
           <div className="max-w-2xl space-y-4 text-muted-foreground leading-relaxed mb-8">
             <p>
               I'm Om, a Master's student in Computer Science at Binghamton
-              University (4.0 GPA), with a passion for building software that
+              University (3.96 GPA), with a passion for building software that
               spans mobile, backend, and machine learning. I like turning ideas
               into working systems and I'm currently looking for Software
               Engineering and AI/ML internship opportunities to keep doing that.
@@ -78,7 +77,6 @@ export default function RightPanel() {
               AI / ML Resume
             </a>
           </div>
-
         </motion.div>
       </section>
 

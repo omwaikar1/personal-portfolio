@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Download } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -31,13 +31,25 @@ export default function RightPanel() {
       {/* ── Hero ──────────────────────────────────────────── */}
       <section id="about" className="scroll-mt-20 mb-20">
         <motion.div initial="hidden" animate="visible" variants={fadeUp}>
+
+          {/* Open to work badge */}
+          <div className="flex items-center gap-2 mb-5">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
+            </span>
+            <span className="text-xs font-semibold text-green-400 uppercase tracking-widest font-mono">
+              Open to opportunities
+            </span>
+          </div>
+
           <h1 className="text-5xl sm:text-6xl font-bold font-mono text-primary tracking-tight leading-none mb-4">
             Om Anant Waikar
           </h1>
           <p className="text-xl text-foreground font-medium mb-6">
-            Building Full-Stack Apps & ML Systems
+            Building Full-Stack Apps &amp; ML Systems
           </p>
-          <div className="max-w-2xl space-y-4 text-muted-foreground leading-relaxed">
+          <div className="max-w-2xl space-y-4 text-muted-foreground leading-relaxed mb-8">
             <p>
               I'm Om, a Master's student in Computer Science at Binghamton
               University (4.0 GPA), with a passion for building software that
@@ -46,6 +58,27 @@ export default function RightPanel() {
               Engineering and AI/ML internship opportunities to keep doing that.
             </p>
           </div>
+
+          {/* Resume download buttons */}
+          <div className="flex flex-wrap gap-3">
+            <a
+              href="/resume-swe.pdf"
+              download="Om_Waikar_SWE_Resume.pdf"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-primary/40 text-sm font-medium text-primary bg-primary/5 hover:bg-primary/15 hover:border-primary transition-all"
+            >
+              <Download className="h-3.5 w-3.5" />
+              SWE Resume
+            </a>
+            <a
+              href="/resume-aiml.pdf"
+              download="Om_Waikar_AIML_Resume.pdf"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-border text-sm font-medium text-muted-foreground bg-card hover:border-primary/40 hover:text-primary transition-all"
+            >
+              <Download className="h-3.5 w-3.5" />
+              AI / ML Resume
+            </a>
+          </div>
+
         </motion.div>
       </section>
 

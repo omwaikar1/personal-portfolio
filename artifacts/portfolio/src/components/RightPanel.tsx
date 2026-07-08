@@ -341,10 +341,10 @@ export default function RightPanel() {
               </header>
               <div className="z-10 sm:col-span-6">
                 <h3 className="font-medium text-foreground text-base">
-                  Binghamton University, SUNY
+                  Binghamton University, State University of New York
                 </h3>
                 <p className="mt-1 text-sm font-medium text-muted-foreground">
-                  MS Computer Science &nbsp;•&nbsp;{" "}
+                  Master's, Computer Science &nbsp;•&nbsp;{" "}
                   <span className="text-primary font-mono">
                     GPA: 3.96 / 4.0
                   </span>
@@ -374,10 +374,11 @@ export default function RightPanel() {
               </header>
               <div className="z-10 sm:col-span-6">
                 <h3 className="font-medium text-foreground text-base">
-                  IIITV, Gujarat, India
+                  Indian Institute of Information Technology Vadodara (IIITV),
+                  India
                 </h3>
                 <p className="mt-1 text-sm font-medium text-muted-foreground">
-                  BTech Information Technology &nbsp;•&nbsp;{" "}
+                  BTech, Information Technology &nbsp;•&nbsp;{" "}
                   <span className="text-primary font-mono">GPA: 7.65 / 10</span>
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">

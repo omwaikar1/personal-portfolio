@@ -92,7 +92,7 @@ export default function Navbar() {
             <MapPin size={12} /> Binghamton, NY
           </span>
           <a
-            href="https://github.com/omwaikar"
+            href="https://github.com/omwaikar1"
             target="_blank"
             rel="noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
@@ -151,7 +151,7 @@ export default function Navbar() {
           ))}
           <div className="flex items-center gap-4 pt-2 border-t border-border">
             <a
-              href="https://github.com/omwaikar"
+              href="https://github.com/omwaikar1"
               target="_blank"
               rel="noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"

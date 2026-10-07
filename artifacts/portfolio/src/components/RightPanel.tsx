@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowUpRight, Download, Code2, Sparkles } from "lucide-react";
+import { ArrowUpRight, Code2, Sparkles } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -58,25 +58,6 @@ export default function RightPanel() {
             </p>
           </div>
 
-          {/* Resume download buttons */}
-          <div className="flex flex-wrap gap-3">
-            <a
-              href="/resume-swe.pdf"
-              download="Om_Waikar_SWE_Resume.pdf"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-border text-sm font-medium text-muted-foreground bg-card hover:border-primary/40 hover:text-primary hover:bg-primary/5 transition-all"
-            >
-              <Download className="h-3.5 w-3.5" />
-              SWE Resume
-            </a>
-            <a
-              href="/resume-aiml.pdf"
-              download="Om_Waikar_AIML_Resume.pdf"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-border text-sm font-medium text-muted-foreground bg-card hover:border-primary/40 hover:text-primary transition-all"
-            >
-              <Download className="h-3.5 w-3.5" />
-              AI / ML Resume
-            </a>
-          </div>
         </motion.div>
       </section>
 
@@ -191,25 +172,6 @@ export default function RightPanel() {
               <div className="z-10 sm:col-span-6">
                 <h3 className="font-medium text-foreground text-base flex items-center gap-2">
                   Multi-Layered Security for Linux Auth
-                  {/* TODO: Replace with your actual GitHub repo URL */}
-                  <a
-                    href="https://github.com/omwaikar/linux-auth-security"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="GitHub repo"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    <SiGithub className="h-4 w-4" />
-                  </a>
-                  <a
-                    href="https://github.com/omwaikar/linux-auth-security"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="View project"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    <ArrowUpRight className="h-4 w-4" />
-                  </a>
                 </h3>
                 <p className="mt-1 text-xs text-muted-foreground font-mono uppercase tracking-wide">
                   Personal Project
@@ -254,9 +216,8 @@ export default function RightPanel() {
               <div className="z-10 sm:col-span-6">
                 <h3 className="font-medium text-foreground text-base flex items-center gap-2">
                   Optimization of Batch Normalization in Deep Residual Networks
-                  {/* TODO: Replace with your actual GitHub repo URL */}
                   <a
-                    href="https://github.com/omwaikar/batch-norm-optimization"
+                    href="https://github.com/omwaikar1/xbnblock-normalization-study"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="GitHub repo"
@@ -265,7 +226,7 @@ export default function RightPanel() {
                     <SiGithub className="h-4 w-4" />
                   </a>
                   <a
-                    href="https://github.com/omwaikar/batch-norm-optimization"
+                    href="https://github.com/omwaikar1/xbnblock-normalization-study"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="View project"
@@ -315,25 +276,6 @@ export default function RightPanel() {
               <div className="z-10 sm:col-span-6">
                 <h3 className="font-medium text-foreground text-base flex items-center gap-2">
                   Cancer Chrono Predictor
-                  {/* TODO: Replace with your actual GitHub repo URL */}
-                  <a
-                    href="https://github.com/omwaikar/cancer-chrono-predictor"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="GitHub repo"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    <SiGithub className="h-4 w-4" />
-                  </a>
-                  <a
-                    href="https://github.com/omwaikar/cancer-chrono-predictor"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="View project"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    <ArrowUpRight className="h-4 w-4" />
-                  </a>
                 </h3>
                 <p className="mt-1 text-xs text-muted-foreground font-mono uppercase tracking-wide">
                   Personal Project

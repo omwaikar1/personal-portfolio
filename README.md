@@ -1,54 +1,55 @@
 # Personal Portfolio Website
 
-Om Anant Waikar's personal portfolio site — a single-page resume showcasing experience, projects, education, and skills.
+Source for my personal portfolio: a single-page site covering my experience, projects, education and technical skills.
 
-## Run & Operate
+## Sections
+- **About:** short introduction, education highlights, and what I'm looking for.
+- **Experience:** work history.
+- **Projects:** grouped into Software Engineering and AI/ML tracks, with technology badges and links to the code.
+- **Education** and **Technical Skills**.
+- Navigation bar with links to GitHub, LinkedIn and email, plus a back-to-top button.
 
-- `pnpm --filter @workspace/portfolio run dev` — run the portfolio site locally
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
-- `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string (only needed if/when the site starts using the API server)
+## Tech stack
+- **Frontend:** React 19, TypeScript, Vite, Tailwind CSS, shadcn/ui components, Framer Motion animations
+- **Monorepo:** pnpm workspaces
+- **Hosting:** configured for Vercel (`artifacts/portfolio/vercel.json`)
 
-## Stack
+## Project structure
+```
+artifacts/
+  portfolio/                 The website
+    src/pages/Portfolio.tsx      Page shell: navbar, cursor gradient, back-to-top
+    src/components/RightPanel.tsx  All page content (About, Experience, Projects, Education, Skills)
+    src/components/Navbar.tsx      Top navigation and social links
+    src/components/ui/             shadcn/ui component library
+  api-server/                Express API scaffold (only a /health route; not used by the site yet)
+  mockup-sandbox/            Vite sandbox for previewing UI component variants
+lib/
+  db/                        Drizzle ORM setup (scaffold, no tables yet)
+  api-spec/, api-zod/, api-client-react/   OpenAPI spec and generated client/validation code
+scripts/                     Workspace maintenance scripts
+```
 
-- pnpm workspaces, Node.js 24, TypeScript 5.9
-- Portfolio site: React 19 + Vite + Tailwind CSS, shadcn/ui components, Framer Motion
-- API: Express 5 (scaffolded, not yet wired into the site)
-- DB: PostgreSQL + Drizzle ORM (scaffolded, not yet in use)
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle) for the API server, Vite for the site
+The site is static: all content lives in `RightPanel.tsx`. The API and database packages are scaffolding for possible future features (such as a contact form) and are not connected to the site.
 
-## Where things live
+## Running locally
+Prerequisites: Node.js 24 or later and pnpm.
 
-- `artifacts/portfolio/` — the portfolio site itself
-  - `src/pages/Portfolio.tsx` — page shell (navbar, cursor gradient, back-to-top)
-  - `src/components/RightPanel.tsx` — all page content (About, Experience, Projects, Education, Skills)
-  - `src/components/Navbar.tsx` — top navigation
-  - `src/components/ui/` — shadcn/ui component library
-- `artifacts/api-server/` — Express API scaffold (currently just a `/health` route; not used by the site yet)
-- `artifacts/mockup-sandbox/` — Vite sandbox for previewing generated UI mockups
-- `lib/db/` — Drizzle ORM schema (currently empty)
-- `lib/api-spec/`, `lib/api-zod/`, `lib/api-client-react/` — OpenAPI spec and generated client code
-- `scripts/` — repo maintenance scripts (e.g. `post-merge.sh`)
+```bash
+git clone https://github.com/omwaikar1/personal-portfolio.git
+cd personal-portfolio
+pnpm install
+pnpm --filter @workspace/portfolio run dev
+```
 
-## Architecture decisions
+## Checks and build
+```bash
+pnpm run typecheck   # type-check every package
+pnpm run build       # typecheck, then build all packages
+```
 
-- The site is currently static content — all resume data lives directly in `RightPanel.tsx` rather than being fetched from the API/DB. The API server and DB packages are scaffolded for future use but not yet connected.
-- `LeftPanel.tsx` is an alternate sticky-sidebar layout that isn't currently rendered by `Portfolio.tsx` (only `Navbar` + `RightPanel` are used). Keep in mind if resurrecting a two-column layout.
-
-## Product
-
-A single-page personal portfolio: hero/about section, work experience, projects (grouped into Software Engineering and AI/ML tracks), education, and technical skills — with resume downloads (SWE and AI/ML variants) and links to GitHub/LinkedIn.
-
-## Gotchas
-
-- Project GitHub links in `RightPanel.tsx` were originally placeholders (`TODO: Replace with your actual GitHub repo URL`) — verify they point to real, existing repos before treating them as final.
-- Resume PDFs (`/resume-swe.pdf`, `/resume-aiml.pdf`) must exist in `artifacts/portfolio/public/` for the download buttons to work.
-
-## Pointers
-
-- See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
+To build only the site the way Vercel does:
+```bash
+cd artifacts/portfolio
+npx vite build --config vite.config.ts   # output in dist/public
+```

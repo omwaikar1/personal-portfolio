@@ -8,6 +8,7 @@ const navItems = [
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
   { id: "education", label: "Education" },
+  { id: "leadership", label: "Leadership" },
   { id: "skills", label: "Skills" },
 ];
 
@@ -167,7 +168,7 @@ export default function Navbar() {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="mailto:owaikar1@binghamton.edu"
+              href="mailto:omwaikar1@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-5 w-5" />

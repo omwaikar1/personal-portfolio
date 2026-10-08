@@ -3,10 +3,10 @@
 Source for my personal portfolio: a single-page site covering my experience, projects, education and technical skills.
 
 ## Sections
-- **About:** short introduction, education highlights, and what I'm looking for.
+- **About:** short introduction, what I'm looking for, and downloadable SWE and AI/ML resumes.
 - **Experience:** work history.
 - **Projects:** grouped into Software Engineering and AI/ML tracks, with technology badges and links to the code.
-- **Education** and **Technical Skills**.
+- **Education**, **Leadership & Activities**, and **Technical Skills**.
 - Navigation bar with links to GitHub, LinkedIn and email, plus a back-to-top button.
 
 ## Tech stack
@@ -30,7 +30,7 @@ lib/
 scripts/                     Workspace maintenance scripts
 ```
 
-The site is static: all content lives in `RightPanel.tsx`. The API and database packages are scaffolding for possible future features (such as a contact form) and are not connected to the site.
+The site is static: all content lives in `RightPanel.tsx`, and mirrors the two resumes in `artifacts/portfolio/public/` (`resume-swe.pdf`, `resume-aiml.pdf`). When a resume changes, update both. The API and database packages are scaffolding for possible future features (such as a contact form) and are not connected to the site.
 
 ## Running locally
 Prerequisites: Node.js 24 or later and pnpm.
